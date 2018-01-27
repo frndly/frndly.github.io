@@ -1,4 +1,9 @@
 /* scrollbar */
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
 
 ::-webkit-scrollbar {
     width: 12px;
@@ -25,54 +30,62 @@ html {
 
 section:nth-child(1) {
     background: white;
-    margin-bottom: -20vh;
+    width: 100%;
 }
+
 .titleSection {
     background-size: cover;
     width: 100vw;
     height: 100vh;
     text-align: center;
-    padding-top: 20vh;
 }
 
 #namePrism {
-    text-align: left;
-    border-right:  1px solid #B8E986;
-    padding-right: 2vw;
-    width: 50vw;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+    height: 25vh;
+    
 }
-
-.titleSection table {
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-
-#contactInfo {
-    width: 25vw;
+#wrapper {
     text-align: center;
+    height: 25vh;
+}
+
+#pinkSkyBorder {
+    border-bottom:  1px solid #B8E986;
+    padding-bottom: 30px;
+    width: 30vw;
     display: inline-block;
 }
 
 #pinkSky {
     box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.50);
-    width: 20vw;
+    height: 20vh;
 }
 
+
 #contactInfo {
-font-family: "helvetica";
-font-size: 15px;
-color: #95BC6E;
-letter-spacing: 2px;
-line-height: 26px;
-text-shadow: 0 2px 1px rgba(200,200,200,0.50);
+    width: 25vw;
+    min-width: 200px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+#contactInfo {
+    font-family: "helvetica";
+    font-size: 15px;
+    color: #95BC6E;
+    letter-spacing: 2px;
+    line-height: 26px;
+    text-shadow: 0 2px 1px rgba(200,200,200,0.50);
 }
 
 
 #downChevron {
-    width: 100px;
-    position: absolute;
-    top: 100vh;
-    transform: translateY(-170%) translateX(-50%);
+    text-align: center;
+    height: 3vh;
+    padding-top: 18vh;
 }
 
 a {
@@ -103,7 +116,7 @@ a:active {
 
 .portfolioSection {
     height: 100vh;
-    width: 99vw;
+    width: 100vw;
     background: #B8E986;
     text-align: center;
     max-width: 100vw;
@@ -188,6 +201,7 @@ a:active {
     position: relative;
     max-width: 100vw;
     overflow-x: hidden;
+    min-width: 100px;
 }
 
 
@@ -195,8 +209,8 @@ a:active {
     background: #FFFFFF;
     box-shadow: 4px 5px 1px 0 rgba(146,146,146,0.50);
     width: 80vw;
-    height: 600px;
     margin-bottom: 10vh;
+    height: 1000px;
 }
 
 
@@ -204,6 +218,7 @@ a:active {
     margin-left: 14vw;
     margin-right: 15vw;
     width: 68vw;
+    min-width: 300px;
     text-align: center;
     
 }
@@ -259,7 +274,12 @@ h2 {
 
 /* FOOTER */
 
-.footer h4 {
+footer {
+    height: 100px;
+    background: #B8E986;
+}
+
+footer h4 {
     text-align: center;
     width: 98vw;
     padding-left: 0px;
@@ -275,9 +295,10 @@ h2 {
     overflow-x: hidden;
 }
 
-.footer img {
-    width: 3vw;
+footer img {
+    height: 5vh;
     float: right;
     transform: translateX(-1vw) translateY(1vh);
     margin-left: 2vw;
+    margin-bottom: 2vh;
 }
