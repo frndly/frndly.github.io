@@ -1,92 +1,171 @@
 <!DOCTYPE html>
-<html lang="en" style="padding: 0px">
+<html lang="en">
     <head>
-        <link>
-        <link rel="stylesheet" type="text/css" href="css/css.css">
-        <title>Heather Budde - Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/cssx.css">
+        <title>Heather Budde</title>
     </head>
-    <body>
+    <body style="margin: 0px">
         <section class="titleSection">
-            <img id="namePrism" src="images/heatherBuddePrism.png">
-            <div id="wrapper"><div id="pinkSkyBorder"><img id="pinkSky" src="images/pinkSky.png"></div></div>
-            <h1 id="contactInfo">                    
-                email:<br>#########@gmail.com<br>  
-                github: <a href="https://github.com/frndly">frndly</a><br>
-                codepen: <a href="https://codepen.io/frndly/">frndly</a><br>             
-            </h1><br>
+             <table id="titleTable">           
+                <tr>
+                    <td rowspan="2">
+                        <img id="namePrism" src="images/heatherBuddePrism.png" alt="Heather Budde">
+                    </td>
+                    <td>
+                        <img id="pinkSky" src="images/pinkSky.png" title="pinkSky by Heather Budde" alt="A simplified image of mountains, the sun, and some birds made by Heather Budde">
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>
+                        <h1 id="contactInfo"> 
+                            LinkedIn: <a href="https://www.linkedin.com/in/heatherbudde/" title="Opens LinkedIn Profile">Heather B</a>
+                            <br>
+                            Codepen: <a href="https://codepen.io/frndly/" title="Opens Codepen Profile">frndly</a>
+                            <br>
+                            GitHub: <a href="https://github.com/frndly" title="Opens GitHub Profile">frndly</a>
+                            <!-- <a href="/pages/contact.html">Contact</a> -->
+                        </h1>
+                    </td>
+                </tr>
+            </table>
             <img id="downChevron" src="images/greenDownChevron.png">
+            
         </section>
         <section class="portfolioSection">
             <h1 id="portfolioHeader">Portfolio</h1>
-            <table id="portfolioTable">
+            <table class="center" style="padding-bottom: 10vh;">
                 <tr>
-                    <td><img id="darbyImg" src="images/darbyTribute.png"></td>
+                    <td colspan="2"><h3 style="color: #FFF; text-align: center;">Websites</h3></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="portfolioImages" src="images/darbyTribute.png" title="Darby Crash Tribute" alt="A vector image of a computer with a screenshot of the 'Darby Crash Tribute' website created by Heather Budde">
+                    </td>
+                    <td>                        <p>
+                        This is a website built for the tribute page challenge for freeCodeCamp.  It’s about a famous punk singer, Darby Crash.<br>
+                        <a href="https://codepen.io/frndly/pen/yoLOKO" title="Opens Darby Crash Tribute on Codepen">View on Codepen</a>
+                        </p></td>
+                </tr>
+                <tr>
                     <td>
                         <p>
-                        This is a website built for the tribute page challenge for freeCodeCamp.com.  It’s about a famous punk singer, Darby Crash.<br>
-                            <a href="#">Want to see more about it?</a>
+                           This is an interactive website for The Broken Thorn, an inn within the Dungeons & Dragons universe. The site features a die roll which determines which version of the site that you see.<br>
+                           <a href="https://frndly.github.io/theBrokenThorn/" title="Opens The Broken Thorn, hosted by GitHub">View it live</a>
                         </p>
+                    </td>
+                    <td>
+                        <img class="portfolioImages" src="images/theBrokenThorn.png" title="The Broken Thorn Website" alt="A vector image of an computer with a screenshot of The Broken Thorn's website, created by Heather Budde">
                     </td>
                 </tr>
                 <tr>
-                    <td><img id="otherSiteIMG" src="images/iMac.png"></td>
+                    <td>
+                        <img class="portfolioImages" src="images/travelersGuideToSeattle.png" title="Darby Crash Tribute" alt="A vector image of a computer with a screenshot of the 'Travelers Guide to Seattle' website created by Group 5 in ITAM at CWU">
+                    </td>
+                    <td>                        
+                        <p>
+                        This is the result of a group project that I worked on for a web design course at my university.  I created and coded the visual design and layout of the website, and cleaned up everybody's code so that it used best practices. <br>
+                        <a href="https://frndly.github.io/seattleGuide/index.html" title="Opens Travelers Guide to Seattle, hosted by GitHub">View it live</a>
+                        </p></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h3 style="color: #FFF; text-align: center;">Python</h3></td>
+                </tr>
+                <tr>
                     <td>
                         <p>
-                           This is where another example would go if I had one.  Instead, I’m using the image you’re looking at because it was a lot of work and I’m very proud of it. <br>
-                           <a href="/pages/theBrokenThorn.html">Want to see more about it?</a>
-                        </p>
+                        Padr is a simple Python program that prints out randomized web design project specifications.<br>
+                        <a href="https://github.com/frndly/pythonProjects/blob/master/padr/padr.py">View the code on GitHub</a>
+                        </p>                        
                     </td>
-
+                    <td>                        
+                        <img class="portfolioImages" src="images/padr.png" title="Padr" alt="A vector image of a computer with a terminal window open that is running 'Padr', a Python program created by Heather Budde">
+                    </td>
                 </tr>
+                <tr>
+                    <td colspan="2"><h3 style="color: #FFF; text-align: center;">Graphics</h3></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="portfolioImages" src="images/graphicsByFrndly.png" title="Darby Crash Tribute" alt="A vector image of a computer with a screenshot of files available in the graphicsByFrndly repository by Heather Budde">
+                    </td>
+                    <td>
+                        <p>
+                            This is a GitHub repository full of graphics that I have created for open use.<br>
+                            <a href="https://github.com/frndly/graphicsByFrndly" title="Opens GitHub Repository, 'graphicsByFrndly'">Check them out</a>
+                        </p>
+                    </td>                    
+                </tr>                
             </table>
         </section>
-        <section class="resumeSection">
-            <div style="position:relative"></div>
-            <object id="resumeBox"></object>
-            <div style="position:absolute;left:1vw;top:1vh;">
-            <h2>Resume</h2>    
+        <section id="resumeSection">
             <table id="resumeTable">
                 <tr>
                     <td colspan="2">
-    
-                        <h3>Resume Item</h3>
-                        <p>Breif Resume text lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum erat elementum blandit hendrerit. </p>
-                    </td>
-                <tr>
-                    <td colspan="2">
-                        <h3>Resume Item</h3>
-                        <p>Breif Resume text lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum erat elementum blandit hendrerit. </p>
-                    </td>
-                <tr>
-                    <td colspan="2">
-                        <h3>Schooling</h3>
-                        <p>Breif Resume text lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum erat elementum blandit hendrerit. </p>
+                        <h2>Resume</h2>
+                        <hr color="#B8E986" width="300vw">
                     </td>
                 </tr>
                 <tr>
-                    <td><h3>Skills</h3></td>
+                    <td colspan="2">
+    
+                        <h3>Office Assistant III @ WA Department of Health</h3>
+                        <p>Created and implemented a system of metrics for incoming calls to provide data and feedback for training materials and for review of processes.  Consistently provides excellent customer service to diverse populations. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Volunteer Teaching Assistant @ Sound Learning</h3>
+                        <p>Taught English as a second language to a class of about fifteen Spanish speaking students. Tutored individuals during and after class, and assisted in developing standards of instruction. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Office Assistant III @ WA Department of Health</h3>
+                        <p>Developed system of outgoing mail with a two hour sendoff instead of 48 hour. Provided technical support and guidance to diverse population of applicants by phone and email with a 95% success rate.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Owner @ FSU Zine Co.</h3>
+                        <p>Worked closely with community by doing outreach, trainings, and building a web platform for curation and sale of independent artwork of multi-mediums.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h3>Education</h3>
+                        <p>Pursuing Bachelor of Science degree in Information Technology and Management, with cybersecurity and project management specializations. Expected graduation in December 2018. Major GPA 3.5</p>
+                        <p>Associate of Arts degree, graduated in 2014.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h3>Technical Skills</h3></td>
                 </tr>
                 <tr>
                     <td>
                         <ul>
-                            <li>this is another list item</li>
-                            <li>this is another item on the same line</li>
+                            <li>Python</li>
+                            <li>HTML/CSS</li>
+                            <li>Graphic Design </li>
+                            <li>Git/Github</li>
                         </ul>
                     </td>
                     <td>   
                         <ul>
-                            <li>this is another list item</li>
-                            <li>this is another item on the same line</li>
+                            <li>UI/UX</li>
+                            <li>Sketch/Adobe Photoshop/GIMP</li>
+                            <li>Scrum/Agile</li>
+                            <li>Windows/Linux/Unix</li>
                         </ul>
                     </td>
                 </tr>
             </table>
+                <div class="footer">
+                    <h4>Heather Budde ©2017 Olympia, WA</h4>
+                    <div class="footerImages">
+                        <img src="images/html58BitLogo.png">
+                        <img src="images/css38BitLogo.png">
+                    </div>
+                </div>
         </section>
-          </div>
     </body>
-    <footer>
-        <h4>Heather Budde ©2017 Olympia, WA</h4>
-        <img src="images/html58BitLogo.png">
-        <img src="images/css38BitLogo.png">
-    </footer>
 </html>
